@@ -1,0 +1,25 @@
+[alias]
+  a = add
+  aa = add --all :/
+  alias = config --get-regexp ^alias\\.
+  b = branch
+  ci = commit
+  co = checkout
+  d = diff --ignore-space-change
+  fix = commit --amend
+  l = log --pretty=format:\"%C(green)%h%C(reset) %C(blue)%ad%C(reset) %s%C(yellow)%d%C(reset) %C(blue)[%an]%C(reset)\" --graph --date=short
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  po = !git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"
+  s = status
+  r = remote
+[color]
+  ui = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+[push]
+  default = current
+[user]
+	name = <%= GitConfig.user_name %>
+	email = <%= GitConfig.user_email %>

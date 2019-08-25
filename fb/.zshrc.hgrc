@@ -1,0 +1,23 @@
+# hg prompt
+# Show current hg bookmark
+if [ -f /mnt/vol/engshare/admin/scripts/scm-prompt ]; then
+  source /mnt/vol/engshare/admin/scripts/scm-prompt
+fi
+
+function parse_hg_branch {
+  if [[ -n $(_dotfiles_scm_info) ]]; then
+    # wrap in parens
+    echo "$(_dotfiles_scm_info)"
+  fi
+}
+
+hg_prompt() {
+  echo " hg:$(parse_hg_branch | tr -d '[[:space:]]')"
+}
+
+# git prompt
+source $HOME/dotfiles/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+git_prompt() {
+   __git_ps1 " (git:%s)"
+}

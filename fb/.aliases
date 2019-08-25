@@ -1,0 +1,93 @@
+#!/bin/zsh
+
+
+# ----------
+# Dir
+# ----------
+alias als='vim ~/.aliases'
+alias sshconfig='vim ~/.ssh/config'
+alias vim='nvim'
+alias dotfiles='cd ~/dotfiles'
+alias slog='cat ~/logs/error_log_${USER}.pretty'
+
+function _TAIL () {
+   nohup tail -n +1 -f ~/logs/error_log_${USER} | pretty > ~/logs/error_log_${USER}.pretty &
+}
+
+# ----------
+# Session
+# ----------
+alias ta='tmux -CC attach'
+alias tt='tmux -CC'
+
+# ---------
+# Zsh
+# ---------
+alias zshconfig='vim ~/.zshrc'
+alias srczsh='source ~/.zshrc'
+
+# ---------
+# Neovim
+# ---------
+alias vimconfig='vim ~/.vimrc'
+alias vimclean='rm $HOME/.config/nvim/viminfo'
+
+# ---------
+# Utils
+# ---------
+alias cleanvt='sudo rm /var/log/asl/*.asl'
+alias R='ranger'
+
+# Bash
+alias bp='vim ~/.bash_profile'
+alias srcbp='source ~/.bash_profile'
+alias bsh='vim ~/.bashrc'
+alias srcbsh='source ~/.bashrc'
+alias prof='vim ~/.profile'
+alias srcprof='source ~/.profile'
+
+# Ruby
+alias rs='be dotenv -f ".env.local,.env" rails s'
+alias irb='pry'
+alias be='bundle exec'
+alias jobs='bin/rake jobs:work'
+
+# --------
+# Network
+# --------
+alias ipv='mosh -6 devvm211.atn2.facebook.com'
+alias myip='dig myip.opendns.com @resolver1.opendns.com'
+
+# ----------
+# Node
+# ----------
+alias nr='npm run'
+alias ni='npm install'
+alias nid='npm install -D'
+alias nip='npm install --only=prod'
+
+# ----------
+# Yarn
+# ---------
+
+alias ys='yarn start'
+alias ya='yarn add'
+alias yad='yarn add --dev'
+
+# ---------
+# Python
+# ---------
+alias venv='virtualenv -p /usr/local/bin/python3 .venv'
+alias vac='source venv/bin/activate'
+alias python='python3'
+
+# --------
+# Git
+# --------
+alias gitconfig='vim ~/.gitconfig'
+alias srcgitconfig='source ~/.gitconfig'
+
+# --------
+# Hg
+# --------
+alias hgconfig='vim ~/.hgrc'
