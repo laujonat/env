@@ -1,6 +1,8 @@
 #!/bin/zsh
 alias vim='nvim'
 alias als='vim ~/.aliases'
+alias sshcf='vim ~/.ssh/config'
+
 
 # ----------
 # Dir
@@ -13,12 +15,12 @@ alias dotfiles='cd ~/personal/dotfiles'
 
 
 # ----------
-# Conda 
+# Conda
 # ----------
 alias jn='jupyter notebook'
 
 # ----------
-# Gatsby 
+# Gatsby
 # ----------
 alias gsbd='gatsby develop'
 alias gdbc='gatsby clean'
@@ -52,7 +54,7 @@ alias prof='vim ~/.profile'
 alias srcprof='source ~/.profile'
 
 # Ruby
-alias rs='be dotenv -f ".env.local,.env" rails s' 
+alias rs='be dotenv -f ".env.local,.env" rails s'
 alias irb='pry'
 alias be='bundle exec'
 alias jobs='bin/rake jobs:work'
@@ -98,7 +100,7 @@ alias gitconfig='vim ~/.gitconfig'
 alias srcgitconfig='source ~/.gitconfig'
 
 # -------
-# ngrok 
+# ngrok
 # -------
 alias ngrok='ngrok http 7337'
 
