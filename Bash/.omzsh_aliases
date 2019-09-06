@@ -1,0 +1,13 @@
+# Pulled from oh-my-zsh aliases
+alias afind='ack -il'
+alias history='fc -l 1'
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
+alias md='mkdir -p'
+alias please=sudo
+alias po=popd
+alias pu=pushd
+alias rd=rmdir

@@ -1,0 +1,39 @@
+#  ---------------------------------------------------------------------------
+#  description:  This file holds useful shell functions for Linux
+#  ---------------------------------------------------------------------------
+
+# Makes new Dir and jumps inside
+mkcd () {
+  mkdir -p "$1" && cd "$1";
+}
+export -f mkcd
+
+# Opens any file in MacOS Quicklook Preview
+ql () {
+  qlmanage -p "$*" >& /dev/null;
+}
+export -f ql
+
+# Moves file to Trash
+trash () {
+  command mv "$@" ~/.Trash ;
+}
+export -f trash
+
+# Find the file under the current directory
+ff () {
+  /usr/bin/find . -name "$@" ;
+}
+export -f ff
+
+# Find the file whose name starts with the givens string
+ffs () {
+  /usr/bin/find . -name "$@"'*' ;
+}
+export -f ffs
+
+# Find file whos name ends with a given string
+ffe () {
+  /usr/bin/find . -name '*'"$@" ;
+}
+export -f ffe

@@ -1,0 +1,21 @@
+#  ---------------------------------------------------------------------------
+#  description:  This file holds my custom aliases
+#  ---------------------------------------------------------------------------
+
+# Bash
+alias bp='vim ~/.bash_profile'
+alias srcbp='source ~/.bash_profile'
+alias bsh='vim ~/.bashrc'
+alias srcbsh='source ~/.bashrc'
+alias prof='vim ~/.profile'
+alias srcprof='source ~/.profile'
+
+# Directories
+alias ~="cd ~"                              # ~:            Go Home
+alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
+alias dotfiles='cd ~/.dotfiles'             # dotfiles:     Go to custom dotfiles directory
+
+# OSX
+alias show_options='shopt'                  # Show_options: display bash options settings
+alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
+alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop

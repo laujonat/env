@@ -17,9 +17,12 @@
   ui = true
 [core]
   excludesfile = ~/.gitignore
+  ignoreCase = false
   editor = vim
 [push]
   default = current
 [user]
-	name = <%= GitConfig.user_name %>
-	email = <%= GitConfig.user_email %>
+  name = "Kanye"
+  email = "xxx@zzz"
+[credential]
+  helper = osxkeychain

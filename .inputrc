@@ -1,0 +1,4 @@
+set blink-matching-paren on
+set colored-stats on
+set completion-ignore-case on
+set enable-bracketed-paste on
