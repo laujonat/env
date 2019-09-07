@@ -5,15 +5,14 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 osascript -e 'tell application "System Preferences" to quit'
 
-$SCREENSHOT_FOLDER=~/Desktop/Screenshots
-
-mkdir -p $SCREENSHOT_FOLDER
-
 # Ask for the administrator password upfront
 sudo -v
-
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+  SCREENSHOT_FOLDER=~/Desktop/Screenshots
+  mkdir -p $SCREENSHOT_FOLDER
+
 
 # Set the default file format for screenshots to png
 defaults write com.apple.screencapture type png
@@ -42,10 +41,10 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 
 # Show the ~/Library folder
-chflags nohidden ~/Library
+# chflags nohidden ~/Library
 
 # Show the /Volumes folder
-sudo chflags nohidden /Volumes
+# sudo chflags nohidden /Volumes
 
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
