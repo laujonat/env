@@ -15,8 +15,10 @@ alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on 
 alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
 alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IP
 
-#   ii:  display useful host related informaton
-#   -------------------------------------------------------------------
+alias en0ipv6='ifconfig en0 | grep inet6 | awk -F " " '{print $2}' | sed 's/%en0//''
+
+# ii:  display useful host related informaton
+# -------------------------------------------------------------------
 ii() {
   echo -e "\nYou are logged on ${red}$HOST"
     echo -e "\nAdditionnal information:$nc] " ; uname -a
@@ -28,15 +30,13 @@ ii() {
     echo -e "\n${mag}Public facing IPV6 Address :$nc \c " ; myip6
     echo -e "\n${nc}"
 }
-
 export -f ii
 
-#   ip:  display IPv4 and IPv6 public addresses
-#   -------------------------------------------------------------------
+# ip:  display IPv4 and IPv6 public addresses
+#-------------------------------------------------------------------
 ip() {
   echo -e "\n${mag}Public facing IPV4 Address :$nc \c " ; myip4
     echo -e "\n${mag}Public facing IPV6 Address :$nc \c " ; myip6
     echo -e "\n${nc}"
 }
-
 export -f ip

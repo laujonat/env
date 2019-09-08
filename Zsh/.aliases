@@ -1,8 +1,24 @@
 #!/bin/zsh
+
 alias vim='nvim'
 alias als='vim ~/.aliases'
-alias sshcf='vim ~/.ssh/config'
 
+# ----------
+# SSH Config/Test
+# ----------
+alias ipv4='curl ifconfig.me'
+alias sshcf='vim ~/.ssh/config'
+alias is-ssh-enabled='sudo systemsetup -getremotelogin'
+alias check-git-ssh='ssh -T git@github.com'
+# (sudo) set-ssh (on | off)
+set-ssh() {
+"systemsetup -setremotelogin $1"
+}
+
+ipv6() {
+  t=`ifconfig en0 | grep inet6`
+  echo $t | awk -F " " '{print $2}' | sed 's/%en0//'
+}
 
 # ----------
 # Dir
@@ -10,8 +26,8 @@ alias sshcf='vim ~/.ssh/config'
 alias hyperconfig='vim ~/.hyper.js'
 alias dd='cd ~/Develop'
 alias ed='cd ~/Edu'
-alias mmd='cd ~/mmd'
-alias dotfiles='cd ~/personal/dotfiles'
+alias sandbox='cd ~/.sandbox'
+alias dotfiles='cd ~/conf/dotfiles'
 
 
 # ----------
@@ -32,7 +48,8 @@ alias gsbb='gatsby build'
 # ---------
 alias zcf='vim ~/.zshrc'
 alias zpf='vim ~/.zprofile'
-
+alias zpl='vim $ZSH/plugins'
+alias zthcf='vim '
 # ---------
 # Neovim
 # ---------
@@ -103,4 +120,3 @@ alias srcgitconfig='source ~/.gitconfig'
 # ngrok
 # -------
 alias ngrok='ngrok http 7337'
-
