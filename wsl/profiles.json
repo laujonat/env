@@ -1,0 +1,81 @@
+ "schema": "https://aka.ms/terminal-profiles-schema",
+  "initialRows": 30,
+  // "initialCols": 120,
+  "alwaysShowTabs": true,
+  "showTerminalTitleInTitlebar": true,
+  "experimental_showTabsInTitlebar": true,
+  "requestedTheme": "dark",
+  "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502",
+  "defaultProfile": "{****}",
+  "profiles": {
+    "defaults": {
+      "fontFace": "Cascadia Code",
+      "fontSize": 14
+    },
+    "list": [
+      {
+        "closeOnExit": "always",
+        "colorScheme": "One Half Dark",
+        "cursorShape": "bar",
+        "hidden": false,
+        "name": "Ubuntu-18.04",
+        "fontFace": "Hack",
+        "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+        "source": "Windows.Terminal.Wsl",
+        "startingDirectory": "//wsl$/Ubuntu-18.04/home/laujonat"
+      }
+    ]
+  },
+  // Add custom color schemes to this array
+  "schemes": [
+    {
+      "name": "Solarized Dark",
+      "foreground": "#FDF6E3",
+      "background": "#073642",
+      "colors": [
+        "#073642",
+        "#D30102",
+        "#859900",
+        "#B58900",
+        "#268BD2",
+        "#D33682",
+        "#2AA198",
+        "#EEE8D5",
+        "#002B36",
+        "#CB4B16",
+        "#586E75",
+        "#657B83",
+        "#839496",
+        "#6C71C4",
+        "#93A1A1",
+        "#FDF6E3"
+      ]
+    }
+  ],
+  "keybindings": [
+    {
+      "command": "newTab",
+      "keys": "ctrl+shift+t"
+    },
+    {
+      "command": "copy",
+      "keys": "ctrl+shift+c"
+    },
+    {
+      "command": "newTab",
+      "keys": "ctrl+shift+t"
+    },
+    {
+      "command": "paste",
+      "keys": [
+        "ctrl+shift+v"
+      ]
+    },
+    {
+      "command": "paste",
+      "keys": [
+        "shift+insert"
+      ]
+    }
+  ]
+}
