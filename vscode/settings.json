@@ -1,0 +1,171 @@
+{
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-d>": false,
+    "<C-x>": false,
+    "<C-f>": false,
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-w>": false,
+  },
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    }
+  ],
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": [
+    "#8FBCBB",
+    "#000"
+  ],
+  "vim.statusBarColors.insert": [
+    "#BF616A",
+    "#000"
+  ],
+  "vim.statusBarColors.visual": [
+    "#B48EAD",
+    "#000"
+  ],
+  "vim.statusBarColors.visualline": [
+    "#B48EAD",
+    "#000"
+  ],
+  "vim.statusBarColors.visualblock": [
+    "#A3BE8C",
+    "#000"
+  ],
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    "editor.rangeHighlightBackground": "#00AA00",
+    "statusBar.background": "#BF616A",
+    "statusBar.noFolderBackground": "#BF616A",
+    "statusBar.debuggingBackground": "#BF616A",
+    "statusBar.foreground": "#000"
+  },
+  "editor.snippetSuggestions": "inline",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.snippetSuggestions": "top",
+    "editor.showUnused": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "launch": {},
+  "remote.WSL.fileWatcher.polling": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "trailing",
+  "terminal.integrated.shellArgs.windows": "C:\\Windows\\sysnative\\wsl.exe",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+  "remote.SSH.remotePlatform": {
+    "aws": "linux"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.multiCursorModifier": "alt",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "sync.gist": "30477aebf469605e5ef65b90428e13c7",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.run": "onSave",
+  "eslint.format.enable": false,
+  "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingColumn": 0,
+  "files.autoSave": "off",
+  "vim.enableNeovim": true,
+  "terminal.integrated.allowChords": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "cmake.configureOnOpen": true,
+  "files.trimTrailingWhitespace": true
+}
